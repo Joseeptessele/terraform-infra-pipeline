@@ -13,7 +13,7 @@ jobs:
   terraform:
     uses: ./.github/workflows/terraform.yml
     with:
-      environment: prod
+      environment: dev
       aws-assume-role-arn: "arn:aws:iam::070814786851:role/github-actions-Joseeptessele-pipeline"
       aws-region: "sa-east-1"
       aws-statefile-s3-bucket: "joseeptessele-terraform-statefile"
